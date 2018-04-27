@@ -17,6 +17,6 @@ Ubuntu 16.04.4 LTS
     
 # Note
     Can support Raspbian, just need to change install.sh:
-    `> arc="x64" # or arm`
+    > arc="x64" # or arm
     to
-    `> arc="arm"`
+    > arc="arm"
