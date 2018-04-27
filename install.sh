@@ -13,12 +13,19 @@ chown debian-tor.debian-tor $plug_path/meek-client
 chmod 755 $plug_path/meek-client
 
 # Disable apparmor for tor, or it can not use meek-client
-ln -s /etc/apparmor.d/system_tor /etc/apparmor.d/disable/
-apparmor_parser -R /etc/apparmor.d/system_tor
-/etc/init.d/apparmor restart
+ln -s /etc/apparmor.d/system_tor /etc/apparmor.d/disable/ 2>/dev/null
+apparmor_parser -R /etc/apparmor.d/system_tor 2>/dev/null
+/etc/init.d/apparmor stop 2>/dev/null
+/etc/init.d/apparmor start
+
+# Copy configurations
+cp ./conf/tor/torrc         /etc/tor/
+cp ./conf/privoxy/config    /etc/privoxy/
 
 # Start tor and privoxy, enable them autostart
+/etc/init.d/tor stop 2>/dev/null
 /etc/init.d/tor start
+/etc/init.d/privoxy stop 2>/dev/null
 /etc/init.d/privoxy start
 
 /usr/sbin/update-rc.d tor defaults
