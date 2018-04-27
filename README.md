@@ -15,8 +15,8 @@ Ubuntu 16.04.4 LTS
     cd torproxy
     ./install.sh
 There you done, your tor proxy was now set up on current server:
-        Socks 5 Proxy: tcp 1080
-        Http Proxy: tcp 8080
+    Socks 5 Proxy: tcp 1080
+    Http Proxy: tcp 8080
 
 # Note
     Can support Raspbian, just need to change install.sh:
