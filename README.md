@@ -11,11 +11,11 @@ General Ubuntu and Debian release.
 Ubuntu 16.04.4 LTS
 
 # Usage
-> git pull https://github.com/lancezhao/torproxy.git
-> ./install.sh
+    > git pull https://github.com/lancezhao/torproxy.git
+    > ./install.sh
 
 # Note
-Can support Raspbian, just need to change install.sh:
-> arc="x64" # or arm
-to
-> arc="arm"
+    Can support Raspbian, just need to change install.sh:
+    > arc="x64" # or arm
+    to
+    > arc="arm"
