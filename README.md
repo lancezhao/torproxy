@@ -10,15 +10,16 @@ General Ubuntu and Debian release.
 # Verified
 Ubuntu 16.04.4 LTS
 
-# Usage
-    Run following commands:
+# Install
     git clone https://github.com/lancezhao/torproxy.git
     cd torproxy
     ./install.sh
-    
-    There you done, your tor proxy was now set up on current server:
+
+# Usage
+    Your tor proxy was now set up on current server:
     Socks 5 Proxy: tcp 1080
     Http Proxy: tcp 8080
+    Assume you know how to use them
 
 # Note
     Can support Raspbian, just need to change install.sh:
