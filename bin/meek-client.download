@@ -1,7 +1,11 @@
-Raspberry PI:
-
+Raspberry PI: Get it from the following site:
 git pull https://github.com/bbs4us/meek-client-pi
 
-x86 Linux:
 
+
+x86 Linux: Download from the following site (blocked by GFW):
+http://www.torproject.org/download/download.html.en
+
+http://www.torproject.org/dist/torbrowser/7.5/tor-browser-linux64-7.5_en-US.tar.xz
+http://www.torproject.org/dist/torbrowser/7.5/tor-browser-linux32-7.5_en-US.tar.xz
 
