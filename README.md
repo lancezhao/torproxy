@@ -18,8 +18,8 @@ Tor Proxy
 
 # Usage
         Your tor proxy was now set up on current server:
-        `Socks5` Proxy: tcp `1080`
-        `Http` Proxy: tcp `8080`
+        Socks5 Proxy: tcp-1080
+        Http Proxy: tcp-8080
         Assume you know how to use them
 
 # Note
