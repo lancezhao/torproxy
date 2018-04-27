@@ -1,0 +1,43 @@
+## More information: https://github.com/bbs4us/onion_pi/
+## https://gist.github.com/0x9090/f2a1d6069f0c330e3a2b
+
+VirtualAddrNetwork 10.192.0.0/10
+DNSPort 53
+TransPort 9040
+# Explicit SOCKS port for applications.
+SocksPort 0.0.0.0:1080
+
+# Have Tor run in the background
+RunAsDaemon 1
+
+# Only ever run as a client. Do not run as a relay or an exit.
+ClientOnly
+
+# Ensure resolution of .onion and .exit domains happen through Tor.
+AutomapHostsSuffixes .onion,.exit
+AutomapHostsOnResolve 1
+
+# meek bridges
+UseBridges 1
+
+# With tor 0.2.4 or earlier, you have to configure the url and front on the
+# command line, and you can only use one url/front combination at a time:
+Bridge meek 0.0.2.0:3 url=https://az668014.vo.msecnd.net/ front=ajax.aspnetcdn.com
+Bridge meek 0.0.2.0:2 url=https://d2cly7j4zqgua7.cloudfront.net/ front=a0.awsstatic.com
+
+# Google is blocked in China
+ClientTransportPlugin meek exec /usr/local/bin/meek-client
+# ClientTransportPlugin meek exec /tor-browser/Browser/TorBrowser/Tor/PluggableTransports/meek-client
+
+DataDirectory /var/lib/tor
+PidFile /var/run/tor/tor.pid
+User debian-tor
+
+ControlSocket /var/run/tor/control
+ControlSocketsGroupWritable 1
+
+CookieAuthentication 1
+CookieAuthFileGroupReadable 1
+CookieAuthFile /var/run/tor/control.authcookie
+# Log notice file /var/log/tor/notice.log
+
