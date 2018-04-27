@@ -2,13 +2,13 @@ Tor Proxy
 ====
 
 # Description
-This is one proxy based on tor network, it utlized meek bridge so that China vistors can access certain type of site.
+        This is one proxy based on tor network, it utlized meek bridge so that China vistors can access certain type of site.
 
 # Support
-General Ubuntu and Debian release.
+        General Ubuntu and Debian release.
 
 # Verified
-Ubuntu 16.04.4 LTS
+        Ubuntu 16.04.4 LTS
 
 # Install
         git clone https://github.com/lancezhao/torproxy.git
@@ -22,7 +22,7 @@ Ubuntu 16.04.4 LTS
         Assume you know how to use them
 
 # Note
-    Can support Raspbian, just need to change install.sh:
-    > arc="x64" # or arm
-    to
-    > arc="arm"
+        Can support Raspbian, just need to change install.sh:
+        > arc="x64" # or arm
+        to
+        > arc="arm"
