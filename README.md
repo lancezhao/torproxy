@@ -2,7 +2,8 @@ Tor Proxy
 ====
 
 # Description
-        This is one proxy based on tor network, it utlized meek bridge so that China vistors can access certain type of site.
+        This is one proxy based on tor network, 
+        It utlized meek bridge so that China vistors can access certain type of site.
 
 # Support
         General Ubuntu and Debian release.
