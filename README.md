@@ -13,9 +13,9 @@ Ubuntu 16.04.4 LTS
 # Usage
     Run following commands:
     
-    > git clone https://github.com/lancezhao/torproxy.git
-    > cd torproxy
-    > ./install.sh
+    git clone https://github.com/lancezhao/torproxy.git
+    cd torproxy
+    ./install.sh
     
     There you done, your tor proxy was now set up on current server:
     
