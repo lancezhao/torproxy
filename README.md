@@ -14,7 +14,7 @@ Ubuntu 16.04.4 LTS
     git clone https://github.com/lancezhao/torproxy.git
     cd torproxy
     ./install.sh
-There you done, your tor proxy was now set up on current server:
+> There you done, your tor proxy was now set up on current server:</br>
     Socks 5 Proxy: tcp 1080
     Http Proxy: tcp 8080
 
