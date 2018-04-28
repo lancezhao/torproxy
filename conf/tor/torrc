@@ -2,9 +2,8 @@
 ## https://gist.github.com/0x9090/f2a1d6069f0c330e3a2b
 
 VirtualAddrNetwork 10.192.0.0/10
-DNSPort 53
-TransPort 9040
-# Explicit SOCKS port for applications.
+DNSPort   0.0.0.0:5353
+TransPort 0.0.0.0:9040
 SocksPort 0.0.0.0:1080
 
 # Have Tor run in the background
