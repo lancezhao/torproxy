@@ -34,3 +34,7 @@ cp ./conf/privoxy/config    /etc/privoxy/
 chown -R debian-tor.debian-tor /var/run/tor
 chmod -R 700 /var/run/tor
 
+echo ".... done !"
+echo "If you would like to enable transparent tor proxy,"
+echo "Please check ./conf/tor/init_trans_proxy.sh for details."
+
