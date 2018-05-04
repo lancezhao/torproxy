@@ -38,5 +38,9 @@ ControlSocketsGroupWritable 1
 CookieAuthentication 1
 CookieAuthFileGroupReadable 1
 CookieAuthFile /var/run/tor/control.authcookie
-# Log notice file /var/log/tor/notice.log
+
+# Log debug         file /var/log/tor/debug
+Log notice-notice file /var/log/tor/log
+Log err-err       file /var/log/tor/err
+Log warn-warn     file /dev/null
 
